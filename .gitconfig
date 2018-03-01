@@ -22,6 +22,7 @@
 	df = diff
 	lg = log --pretty --oneline --graph --decorate
 	lg1 = log --oneline
+	lst = ls-tree --abbrev HEAD
 [merge]
 	conflictstyle = diff3
 	tool = meld
