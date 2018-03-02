@@ -169,6 +169,14 @@ function parse_git_dirty {
     fi
 }
 
+function git {
+    if [ $PWD == $HOME ]; then
+	/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME "$@"
+    else
+	/usr/bin/git $@
+    fi
+}
+
 # export MYPSDIR='$(echo -n "$PWD" | sed "s+/remote/projects/\(.\{12\}\).*/+\1/.../+")'
 #export PS1="\[$TXTBLU\]\$(parse_git_branch)\[\033[0m\]\[\033[1;33m\]@\h\[\033[0m\]:$(eval 'echo ${MYPSDIR}')$ ";
 export PS1="\[$TXTBLU\]\$(parse_git_branch)\[\033[0m\]\[\033[1;33m\]@\h\[\033[0m\]:\w$ ";
