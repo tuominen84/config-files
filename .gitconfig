@@ -4,9 +4,9 @@
 [alias]
     #lg = log --color --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %Creset' --abbrev-commit
     # lg1 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    lgc = log --color --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %Creset' --abbrev-commit --graph
-    lga = log --color --pretty=format:'%C(yellow)%d%Creset %s %Cgreen(%cD) %Creset' --abbrev-commit --graph --all
-    lg = log --color --pretty=format:'%C(yellow)%d%Creset %s %Cgreen(%cr) %Creset' --graph
+    lgc = log --color --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cd) %Creset' --abbrev-commit --graph --date=short
+    lga = log --color --pretty=format:'%C(yellow)%d%Creset %s %Cgreen(%ad) %Creset' --abbrev-commit --graph --all
+    lg = log --color --pretty=format:'%C(yellow)%d%Creset %s %Cgreen(%cd) %Creset' --graph --date=short
     ci = commit
     cia = commit -a
     co = checkout
