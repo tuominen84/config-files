@@ -1,0 +1,24 @@
+{
+    "git.ignoreLegacyWarning": true,
+    "git.countBadge": "tracked",
+    "vim.easymotion": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.renderWhitespace": "all",
+    "python.linting.pylintArgs": [
+        "--disable=print-statement"
+    ],
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "window.zoomLevel": 0,
+    "editor.parameterHints": false,
+    "workbench.statusBar.feedback.visible": false
+}
