@@ -99,7 +99,7 @@ function git {
     if [ $PWD == $HOME ]; then
 	/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME "$@"
     else
-	/usr/bin/git $@
+	/usr/bin/git "$@"
     fi
 }
 
