@@ -24,6 +24,7 @@
 	lg = log --pretty --oneline --graph --decorate
 	lg1 = log --oneline
 	lst = ls-tree --abbrev HEAD
+	lga = log --pretty --oneline --graph --decorate --all
 [merge]
 	conflictstyle = diff3
 	tool = meld
