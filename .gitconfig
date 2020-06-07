@@ -4,6 +4,7 @@
 
 [core]
 	excludesfile = /Users/lasse/.gitignore
+	abbrev = 4
 [color]
 	branch = auto
 	diff = auto
@@ -21,7 +22,7 @@
 	br = branch
 	co = checkout
 	df = diff
-	lg = log --pretty --oneline --graph --decorate
+	lg = log --color --pretty=format:'%C(auto)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cd)%Creset' --abbrev-commit --graph --date=human
 	lg1 = log --oneline
 	lst = ls-tree --abbrev HEAD
 	lga = log --pretty --oneline --graph --decorate --all
