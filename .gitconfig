@@ -1,0 +1,36 @@
+[user]
+        name = Lasse Tuominen
+        email = lasse.tuominen@elomatic.com
+[alias]
+        st = status
+        df = diff
+        ci = commit
+        cia = commit -a
+        co = checkout
+        br = branch
+
+        # lg = log --oneline --graph --decorate
+        # lga = log --oneline --graph --decorate --all --date=human
+
+        #lg = log --color --pretty=format:'%C(auto)%d%Creset %s %Cgreen(%cd) %Creset' --graph --date=human
+        lg=log --color --pretty=format:'%C(auto)%h%Creset%C(auto)%d%Creset %s %Cgreen(%ad) %Creset' --abbrev-commit --graph --date=human
+        lga=log --color --pretty=format:'%C(auto)%h%Creset%C(auto)%d%Creset %s %Cgreen(%ad) %Creset' --abbrev-commit --graph --date=human --all
+[color]
+        ui = auto
+
+[diff "jupyternotebook"]
+	command = git-nbdiffdriver diff
+[merge "jupyternotebook"]
+	driver = git-nbmergedriver merge %O %A %B %L %P
+	name = jupyter notebook merge driver
+[difftool "nbdime"]
+	cmd = git-nbdifftool diff \"$LOCAL\" \"$REMOTE\" \"$BASE\"
+[difftool]
+	prompt = false
+[mergetool "nbdime"]
+	cmd = git-nbmergetool merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[mergetool]
+	prompt = false
+[core]
+    abbrev = 4
+
