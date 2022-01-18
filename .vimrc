@@ -10,16 +10,16 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 Plugin 'morhetz/gruvbox'
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'bling/vim-airline'
 " Plugin 'davidhalter/jedi-vim'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 " Markdown things
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'michaeljsmith/vim-indent-object'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+"Plugin 'michaeljsmith/vim-indent-object'
 "Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
