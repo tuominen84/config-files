@@ -44,8 +44,11 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set relativenumber
+set number
 set cursorline
 set autoindent
+set smartindent
+set scrolloff=8
 
 filetype plugin on
 syntax on
@@ -77,5 +80,7 @@ let g:netrw_browse_split=4	" open in prior window
 let g:netrw_altv=1		" open splits to right 
 let g:netrw_liststyle=3		" tree view
 
+autocmd Syntax markdown normal zR
 
+set mouse=a
 
