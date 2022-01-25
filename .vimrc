@@ -84,3 +84,10 @@ autocmd Syntax markdown normal zR
 set mouse=a
 
 iabbrev <expr> ddt strftime("%Y-%m-%d %a")
+
+inoremap (<Space> ()<Left>
+inoremap {<Space> {}<Left>
+inoremap [<Space> []<Left>
+inoremap <<Space> <><Left>
+inoremap "<Space> ""<Left>
+inoremap '<Space> ''<Left>
