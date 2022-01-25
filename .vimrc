@@ -63,9 +63,8 @@ set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_co
 set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
 
 inoremap jk <ESC>
-map <C-n> :NERDTreeToggle<CR>
+vnoremap jk <ESC>
 map <C-h> :noh<CR>
-map <C-b> :CtrlPBuffer<CR>
 
 set sts=4
 set sw=4
