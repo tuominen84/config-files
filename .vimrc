@@ -91,3 +91,9 @@ inoremap [<Space> []<Left>
 inoremap <<Space> <><Left>
 inoremap "<Space> ""<Left>
 inoremap '<Space> ''<Left>
+
+" check :help last-postion-jump 
+autocmd BufReadPost *
+    \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+    \ |   exe "normal! g`\""
+    \ | endif
