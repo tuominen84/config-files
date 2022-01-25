@@ -83,4 +83,4 @@ autocmd Syntax markdown normal zR
 
 set mouse=a
 
-iabbrev <expr> ddd strftime("%Y-%m-%d %a")
+iabbrev <expr> ddt strftime("%Y-%m-%d %a")
