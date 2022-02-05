@@ -84,6 +84,8 @@ autocmd Syntax markdown normal zR
 set mouse=a
 
 iabbrev <expr> ddt strftime("%Y-%m-%d %a")
+iabbrev <expr> ddtp strftime("%Y-%m-%d %a", localtime()-24*3600)
+inoreabbrev simo sim.println();<Left><Left>
 
 inoremap (<Space> ()<Left>
 inoremap {<Space> {}<Left>
