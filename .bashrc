@@ -119,6 +119,7 @@ xterm*)
 ;;
 esac
 
+shopt -s histverify
 shopt -s nocaseglob
 set completion-ignore-case on 
 
