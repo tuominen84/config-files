@@ -44,7 +44,8 @@ module load intel/ifort
 module load abaqus/2019
 
 #module load ansys/2020r2
-module load ansys/2019r2
+#module load ansys/2019r2
+module load ansys/2020r2
 #module load star-ccm+/15.02.009_01_dp # This is version for Posiva Vettyminen
 module load star-ccm+/16.06.008_01_dp
 
