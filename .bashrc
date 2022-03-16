@@ -153,6 +153,7 @@ bind '"\e[B": history-search-forward'
 bind '"\C-p": history-search-backward'
 bind '"\C-n": history-search-forward'
 
+shopt -s histverify
 shopt -s histappend
 export HISTTIMEFORMAT="%F %a %T "
 PROMPT_COMMAND="$PROMPT_COMMAND ; history -a"
