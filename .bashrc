@@ -44,6 +44,7 @@ export VISUAL=$EDITOR
 export XAUTHORITY=$HOME/.Xauthority
 #export LANG="fi_FI.ISO8859-1"
 #export LC_ALL="fi_FI.ISO8859-1"
+export LANG="en_US.UTF-8"
 
 # Colors
 TXTBLU='\e[38;5;27m' # Blue
