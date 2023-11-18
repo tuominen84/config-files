@@ -124,6 +124,8 @@ shopt -s histverify
 shopt -s nocaseglob
 set completion-ignore-case on 
 
+PATH="/usr/local/opt/gawk/libexec/gnubin:$PATH"
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc).
 . ~/.bash_complete
