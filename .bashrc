@@ -126,6 +126,13 @@ set completion-ignore-case on
 
 PATH="/usr/local/opt/gawk/libexec/gnubin:$PATH"
 
+# Bind up/down & Ctrl P/N to search fucntions
+# see: https://stackoverflow.com/a/1030206
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+bind '"\C-p": history-search-backward'
+bind '"\C-n": history-search-forward'
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc).
 . ~/.bash_complete
