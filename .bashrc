@@ -38,7 +38,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 
 LESSOPEN="lessopen.sh %s"
 LESSCLOSE="lessclose.sh %s %s"
-export EDITOR=vim
+export EDITOR=nvim
 export VISUAL=$EDITOR
 
 export XAUTHORITY=$HOME/.Xauthority
