@@ -36,6 +36,11 @@ alias pylab='ipython --pylab'
 
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 
+alias vim=nvim
+
+alias d=cd
+#alias cd="echo eipäs olekkaan"
+
 LESSOPEN="lessopen.sh %s"
 LESSCLOSE="lessclose.sh %s %s"
 export EDITOR=nvim
@@ -139,7 +144,5 @@ bind '"\C-n": history-search-forward'
 . ~/.git-completion.bash
 
 
-# heroku autocomplete setup
-HEROKU_AC_BASH_SETUP_PATH=/Users/lasse/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
