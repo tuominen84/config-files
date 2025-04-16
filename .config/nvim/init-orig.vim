@@ -107,43 +107,43 @@ set foldlevelstart=1
 " netrw and vim-vinegar
 let g:netrw_browse_split = 3
 
-" Plugins, syntax, and colors
-" ---------------------------------------------------------------------------
-" vim-plug
-" https://github.com/junegunn/vim-plug
-" Specify a directory for plugins
-" - For Neovim: ~/.local/share/nvim/plugged
-" - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.local/share/nvim/plugged')
-
-" Make sure to use single quotes
-" Install with `:PlugInstall`
-
-" https://github.com/itchyny/lightline.vim
-Plug 'itchyny/lightline.vim'
-
-" https://github.com/tpope/vim-commentary
-Plug 'tpope/vim-commentary'
-
-" https://github.com/tpope/vim-surround
-Plug 'tpope/vim-surround'
-
-" https://github.com/tpope/vim-vinegar
-Plug 'tpope/vim-vinegar'
-
-" https://github.com/APZelos/blamer.nvim
-Plug 'APZelos/blamer.nvim'
-
-" https://github.com/fenetikm/falcon/wiki/Installation
-Plug 'fenetikm/falcon'
-
-" https://github.com/macguirerintoul/night_owl_light.vim
-Plug 'macguirerintoul/night_owl_light.vim'
-
-Plug 'jiangmiao/auto-pairs'
-
-" Initialize plugin system
-call plug#end()
+"" " Plugins, syntax, and colors
+"" " ---------------------------------------------------------------------------
+"" " vim-plug
+"" " https://github.com/junegunn/vim-plug
+"" " Specify a directory for plugins
+"" " - For Neovim: ~/.local/share/nvim/plugged
+"" " - Avoid using standard Vim directory names like 'plugin'
+"" call plug#begin('~/.local/share/nvim/plugged')
+"" 
+"" " Make sure to use single quotes
+"" " Install with `:PlugInstall`
+"" 
+"" " https://github.com/itchyny/lightline.vim
+"" Plug 'itchyny/lightline.vim'
+"" 
+"" " https://github.com/tpope/vim-commentary
+"" Plug 'tpope/vim-commentary'
+"" 
+"" " https://github.com/tpope/vim-surround
+"" Plug 'tpope/vim-surround'
+"" 
+"" " https://github.com/tpope/vim-vinegar
+"" Plug 'tpope/vim-vinegar'
+"" 
+"" " https://github.com/APZelos/blamer.nvim
+"" "Plug 'APZelos/blamer.nvim'
+"" 
+"" " https://github.com/fenetikm/falcon/wiki/Installation
+"" Plug 'fenetikm/falcon'
+"" 
+"" " https://github.com/macguirerintoul/night_owl_light.vim
+"" Plug 'macguirerintoul/night_owl_light.vim'
+"" 
+"" Plug 'jiangmiao/auto-pairs'
+"" 
+"" " Initialize plugin system
+"" call plug#end()
 
 syntax enable
 " Neovim only
@@ -153,27 +153,27 @@ set termguicolors
 "colorscheme night_owl_light
 
 " Dark scheme
-colorscheme falcon
+colorscheme torte
 set background=dark
 
 " Show character column
 set colorcolumn=88
 
-" lightline config - add file 'absolutepath'
-" Delete colorscheme line below if using Dark scheme
-
-let g:lightline = {
-      \ 'colorscheme': 'PaperColor_light',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'absolutepath', 'modified' ] ]
-      \ }
-      \ }
-
-let g:blamer_enabled = 1
-" %a is the day of week, in case it's needed
-let g:blamer_date_format = '%e %b %Y'
-highlight Blamer guifg=darkorange
+"" " lightline config - add file 'absolutepath'
+"" " Delete colorscheme line below if using Dark scheme
+"" 
+"" let g:lightline = {
+""       \ 'colorscheme': 'PaperColor_light',
+""       \ 'active': {
+""       \   'left': [ [ 'mode', 'paste' ],
+""       \             [ 'readonly', 'absolutepath', 'modified' ] ]
+""       \ }
+""       \ }
+"" 
+"" let g:blamer_enabled = 1
+"" " %a is the day of week, in case it's needed
+"" let g:blamer_date_format = '%e %b %Y'
+"" highlight Blamer guifg=darkorange
 
 inoremap jk <ESC>
 "vnoremap jk <ESC>
